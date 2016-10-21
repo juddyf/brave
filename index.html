@@ -1,0 +1,52 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <title></title>
+  <script src="js/index.js"></script>
+  <link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  <div id="error-flag">
+  </div>
+  <div class="header">
+    <div class="header-text">
+      The Brave UX App
+    </div>
+    <div class="button header-button" id="header" onclick="openMenu()">Menu
+      <img src="icons/hamburger.svg" class="burger right">
+    </div>
+  </div>
+
+  <div id="menu">
+    <div class="button menu-button">Dashboard</div>
+    <div class="button menu-button">My Profile</div>
+    <div class="button menu-button">Settings</div>
+    <div class="button menu-button muted">Help</div>
+    <div class="button menu-button muted">About</div>
+    <div class="button menu-button">Login</div>
+  </div>
+  <div class="main">
+    <object type="image/svg+xml" data="icons/flag.svg" class="logo">
+      <img src="icons/flag.svg">
+    </object>
+    <p>Do NOT bookmark this page.</p>
+    <h3>Sign Up</h3>
+    <div class="input-group">
+      <span class="helper left">Username</span>
+      <input type="text" id="username"></input>
+    </div>
+    <div class="input-group">
+      <span class="helper left">Password</span>
+      <input type="password" id="password"></input>
+      <span class="helper right" id="eye">
+        <img src="icons/eye.svg" class="eye" onclick="pass()">
+      </span>
+    </div>
+    <div class="submit-group">
+      <div class="button submit-button" name="submit" onclick="submit()">Sign Up</div>
+      <span class="right help-link">Need Help?</span>
+    </div>
+  </div>
+  <div class ="footer">
+    Powered by Brave UX
+  </div>
+</body>
